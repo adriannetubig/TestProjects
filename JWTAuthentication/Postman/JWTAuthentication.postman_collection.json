@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Customers",
+			"name": "Restricted",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -26,12 +26,12 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://localhost:44391/api/Authentications?",
-					"protocol": "https",
+					"raw": "http://localhost:55200/api/Authentications?",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "44391",
+					"port": "55200",
 					"path": [
 						"api",
 						"Authentications"
@@ -82,12 +82,12 @@
 					"raw": "{\r\n   \"UserName\":\"johndoe\",\r\n   \"Password\": \"def@123\"\r\n} "
 				},
 				"url": {
-					"raw": "https://localhost:44391/api/Authentications/login",
-					"protocol": "https",
+					"raw": "http://localhost:55200/api/Authentications/login",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "44391",
+					"port": "55200",
 					"path": [
 						"api",
 						"Authentications",
@@ -107,12 +107,12 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://localhost:44391/api/values",
-					"protocol": "https",
+					"raw": "http://localhost:55200/api/values",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "44391",
+					"port": "55200",
 					"path": [
 						"api",
 						"values"
