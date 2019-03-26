@@ -14,8 +14,6 @@ namespace CorsWithApi
         {
             Configuration = configuration;
         }
-
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -23,18 +21,6 @@ namespace CorsWithApi
         {
             services.AddMvc()
                 .AddNewtonsoftJson();
-
-
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy(MyAllowSpecificOrigins,
-            //    builder =>
-            //    {
-            //        builder.AllowAnyOrigin()
-            //        .AllowAnyHeader()
-            //        .AllowAnyMethod();
-            //    });
-            //});
 
             services.AddSignalR();
         }
@@ -74,11 +60,6 @@ namespace CorsWithApi
             {
                 routes.MapHub<ChatHub>("/chatHub");
             });
-
-            app.Use(hubContext = context.RequestServices.GetRequiredService<IHubContext<ChatHub>>();); // fix this
-            //app.UseCors();
-            //app.UseCors(MyAllowSpecificOrigins);
-
         }
     }
 }

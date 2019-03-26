@@ -22,7 +22,11 @@ namespace CorsWithApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            _hubContext.Clients.All.SendAsync("Notify", $"Home page loaded at: {DateTime.Now}");
+            Task.WaitAll(
+            _hubContext.Clients.All.SendAsync("ReceiveMessage", "Api", "Message")
+            );
+            //await _hub.Clients.All.SendAsync("show_data", data);
+
             return new string[] { "value1", "value2" };
         }
 
