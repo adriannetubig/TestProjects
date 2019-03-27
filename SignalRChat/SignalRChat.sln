@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.28705.295
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaScript", "JavaScript\JavaScript.csproj", "{2644102B-0390-43B2-A6DB-943811482E2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsWithApi", "CorsWithApi\CorsWithApi.csproj", "{A3BD4B73-389E-4BDC-A097-03F6C1D7C24C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsWithApi", "CorsWithApi\CorsWithApi.csproj", "{A3BD4B73-389E-4BDC-A097-03F6C1D7C24C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScript", "TypeScript\TypeScript.csproj", "{3FED6085-03F7-4C18-900D-6D49F5816AA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A3BD4B73-389E-4BDC-A097-03F6C1D7C24C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3BD4B73-389E-4BDC-A097-03F6C1D7C24C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3BD4B73-389E-4BDC-A097-03F6C1D7C24C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FED6085-03F7-4C18-900D-6D49F5816AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FED6085-03F7-4C18-900D-6D49F5816AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FED6085-03F7-4C18-900D-6D49F5816AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FED6085-03F7-4C18-900D-6D49F5816AA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

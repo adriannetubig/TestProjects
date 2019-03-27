@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TypeScriptToolsVersion>3.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="css\main.css" />
+    <Content Include="index.html" />
+    <Content Include="index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>
